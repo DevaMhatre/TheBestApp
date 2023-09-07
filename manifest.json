@@ -1,0 +1,14 @@
+{
+    "name":"THE BEST APP",
+    "short_name":"The App",
+    "icons":[{
+        "src":"icon.png",
+        "sizes":"351x351",
+        "type":"image/png"
+    }],
+    "start_url":"/index.html",
+    "display":"standalone",
+    "orientation":"portrait",
+    "background_color":"#FF0000",
+    "theme_color":"#FF0000"
+}

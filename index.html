@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The APP</title>
+    <script src="index.js"></script>
+    <link rel="manifest" href="/manifest.json">
+</head>
+<h1>The App!</h1>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:90vh;
+    }
+</style>
+
+<body>
+    <button id="button">Click Me!</button>
+
+<script>
+    if('serviceWorker' in navigator){
+        window.addEventListener('load',()=>{
+            navigator.serviceWorker.register('/sw.js')
+        })
+    }
+</script>
+
+
+
+<script>console.log("Script is running!")
+function random (){
+
+
+let letters = "0123456789ABCDEF";
+ 
+ // HTML color code starts with #
+ let color = '#';
+  
+
+ for (let i = 0; i < 6; i++)
+     color += letters[(Math.floor(Math.random() * 16))];
+  
+ console.log(color);
+ document.body.style.backgroundColor = color
+}
+
+const button =  document.querySelector("button")
+button.addEventListener('click',random)
+
+</script>
+
+
+
+
+</body>
+</html>
