@@ -1,7 +1,7 @@
 const cacheName = 'cache-v1';
 
 const resourcesToPreach = [
-    '/',
+    '/TheBestApp/',
     'index.html',
 ]
 self.addEventListener('install', event=>{
