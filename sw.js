@@ -17,10 +17,10 @@ self.addEventListener('activate', event=>{
     console.log("Activate Event")
 })
 self.addEventListener('fetch', event=>{
-    console.log("fetch intercepted for:", event.reqest.url)
-    event.respondWith(caches.match(event.reqest)
+    console.log("fetch intercepted for:", event.request.url)
+    event.respondWith(caches.match(event.request)
     .then(cacheResponse =>{
-        return cacheResponse || fetch(event.reqest)
+        return cacheResponse || fetch(event.request)
     })
     )
 })
