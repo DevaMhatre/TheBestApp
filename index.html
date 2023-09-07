@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The APP</title>
     <script src="index.js"></script>
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/TheBestApp/manifest.json">
 </head>
 <h1>The App!</h1>
 <style>
@@ -23,7 +23,7 @@
 <script>
     if('serviceWorker' in navigator){
         window.addEventListener('load',()=>{
-            navigator.serviceWorker.register('/sw.js')
+            navigator.serviceWorker.register('/TheBestApp/sw.js')
         })
     }
 </script>
