@@ -6,7 +6,7 @@
         "sizes":"351x351",
         "type":"image/png"
     }],
-    "start_url":"/index.html",
+    "start_url":"/TheBestApp/index.html",
     "display":"standalone",
     "orientation":"portrait",
     "background_color":"#FF0000",
