@@ -9,6 +9,6 @@
     "start_url":"/TheBestApp/index.html",
     "display":"standalone",
     "orientation":"portrait",
-    "background_color":"#FF0000",
-    "theme_color":"#FF0000"
+    "background_color":"#ffd342",
+    "theme_color":"#212121"
 }
