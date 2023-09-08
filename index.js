@@ -14,10 +14,10 @@ if("serviceWorker" in navigator){
 let deferredPrompt;
 
 window.addEventListener('beforeinstallprompt',(e)=>{
-    e.preventDefault();
-    deferredPrompt = e
-
-    btnAdd.style.display = "block"
+    // e.preventDefault();
+    // deferredPrompt = e
+    e.prompt();
+    // btnAdd.style.display = "block"
 
     btnAdd.addEventListener('click',(e)=>{
         deferredPrompt.prompt();
